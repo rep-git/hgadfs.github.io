@@ -22,7 +22,7 @@
     </iframe>
     <script>
       function getData() {
-        alert(document.getElementById('idFrmConteiner').getBoundingClientRect().height);
+        alert(document.getElementById('idFrmConteiner').documentElement.scrollHeight);
       };
     </script>
     <button onclick="getData();">Valor</button>
