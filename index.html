@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>HGADFS</title>
   </head>
   <body>
     <!-- Optional JavaScript -->
@@ -16,35 +16,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-    <script>
-      function geth(id){
-        alert(document.getElementById(id).contentDocument.body.scrollHeight);
-      };
-      function getDocHeight(doc) {
-            doc = doc || document;
-            // stackoverflow.com/questions/1145850/
-            var body = doc.body, html = doc.documentElement;
-            var height = Math.max( body.scrollHeight, body.offsetHeight, 
-                html.clientHeight, html.scrollHeight, html.offsetHeight );
-                alert(height);
-            return height;
-        };
-      function setIframeHeight(id) {
-            var ifrm = document.getElementById(id);
-            var doc = ifrm.contentDocument? ifrm.contentDocument: 
-                ifrm.contentWindow.document;
-            ifrm.style.visibility = 'hidden';
-            ifrm.style.height = "10px"; // reset to minimal height ...
-            // IE opt. for bing/msn needs a bit added or scrollbar appears
-            ifrm.style.height = getDocHeight( doc ) + 4 + "px";
-            alert(ifrm.style.height);    
-            ifrm.style.visibility = 'visible';
-        };
-    </script>
-    <iframe src="https://script.google.com/macros/s/AKfycbwAmR-Sit0RcWI0k8mMBY0IkNmTo1eSzbJy0ocveptwGjg4jLw/exec" id="ifrm" width="100%" height="auto" style="border:none;" onload="setIframeHeight(this.id);">
-    </iframe>
-    
-    <button onclick='geth("ifrm");'>Valor</button>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbwAmR-Sit0RcWI0k8mMBY0IkNmTo1eSzbJy0ocveptwGjg4jLw/exec" width="100%" height="1000px" style="border:none;">
+    </iframe>    
   </body>
 </html>
