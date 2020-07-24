@@ -27,6 +27,7 @@
     var body = doc.body, html = doc.documentElement;
     var height = Math.max( body.scrollHeight, body.offsetHeight, 
         html.clientHeight, html.scrollHeight, html.offsetHeight );
+        alert(height);
     return height;
 }
       function setIframeHeight(id) {
@@ -37,6 +38,7 @@
     ifrm.style.height = "10px"; // reset to minimal height ...
     // IE opt. for bing/msn needs a bit added or scrollbar appears
     ifrm.style.height = getDocHeight( doc ) + 4 + "px";
+    alert(ifrm.style.height);    
     ifrm.style.visibility = 'visible';
 }
       
