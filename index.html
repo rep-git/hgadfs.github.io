@@ -18,6 +18,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
     <script>
+      function geth(id){
+        alert(document.getElementById(id).contentDocument.body.scrollHeight);
+      };
       function getDocHeight(doc) {
             doc = doc || document;
             // stackoverflow.com/questions/1145850/
@@ -42,6 +45,6 @@
     <iframe src="https://script.google.com/macros/s/AKfycbwAmR-Sit0RcWI0k8mMBY0IkNmTo1eSzbJy0ocveptwGjg4jLw/exec" id="ifrm" width="100%" height="auto" style="border:none;" onload="setIframeHeight(this.id);">
     </iframe>
     
-    <button onclick='setIframeHeight("ifrm");'>Valor</button>
+    <button onclick='geth("ifrm");'>Valor</button>
   </body>
 </html>
